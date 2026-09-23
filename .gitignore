@@ -1,0 +1,10 @@
+# Môi trường ảo của Python
+backend/venv/
+backend/__pycache__/
+
+# Thư viện của Node.js
+frontend/node_modules/
+
+# File hệ thống Windows
+.DS_Store
+Thumbs.db
