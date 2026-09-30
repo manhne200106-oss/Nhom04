@@ -1,48 +1,32 @@
-# Hệ Thống Quản Lý Dự Án Nhóm Có Tích Hợp AI
+# 🚀 TaskMaster AI - Hệ thống quản lý dự án nhóm có tích hợp AI
+**Nhóm 4 (ICTU)**
 
-Dự án được khởi tạo thành công theo tài liệu `SRS.md`.
+## 📥 Hướng dẫn khởi chạy nhanh (Dành cho Giảng viên)
 
-## Tech Stack
-- **Backend**: FastAPI, SQLAlchemy, Pydantic, SQLite, Google Gemini API
-- **Frontend**: React, Vite, TailwindCSS
-- **Database**: SQLite (mặc định) có thể cấu hình sang PostgreSQL.
+Dự án đã được cấu hình script tự động hóa hoàn toàn để thuận tiện nhất cho việc chấm bài. Thầy/Cô không cần phải gõ bất kỳ lệnh cài đặt thủ công nào.
 
-## Cấu trúc thư mục
-- `backend/`: Chứa mã nguồn API, CSDL, Auth JWT và AI Service.
-- `frontend/`: Chứa mã nguồn giao diện Kanban, Dashboard.
+1. Yêu cầu máy tính đã cài đặt sẵn **Python** và **Node.js**.
+2. Giải nén mã nguồn ra một thư mục độc lập.
+3. Nhấp đúp chuột vào file **`start_app.bat`** nằm ở ngoài cùng thư mục.
+4. Quá trình tự động diễn ra:
+   - Tự động tạo môi trường ảo (venv) và cài thư viện backend.
+   - Tự động cài `node_modules` cho frontend.
+   - Tự động nạp cơ sở dữ liệu mẫu.
+   - Tự động bật server và mở sẵn trình duyệt web (`http://localhost:5173`).
 
-## Hướng dẫn chạy dự án
+*(Lưu ý: Quá trình khởi chạy lần đầu tiên cần tải thư viện nên có thể mất khoảng 1-2 phút).*
 
-### 1. Khởi chạy Backend
-Mở Terminal, di chuyển vào thư mục `backend/`:
-```bash
-cd backend
-python -m venv venv
-# Active venv (Windows)
-venv\Scripts\activate
-# Cài đặt thư viện
-pip install -r requirements.txt
-# Khởi tạo dữ liệu mẫu (Admin, PM, Member, Tasks)
-python seed_data.py
-# Chạy server (Mặc định ở port 8000)
-uvicorn app.main:app --reload
-```
-Lưu ý: Mở file `backend/.env.example` sao chép thành `.env` và nhập `GEMINI_API_KEY` thực tế để dùng được AI.
+## 🔐 Tài khoản Demo (Đã nạp sẵn dữ liệu test)
 
-### 2. Khởi chạy Frontend
-Mở Terminal mới, di chuyển vào thư mục `frontend/`:
-```bash
-cd frontend
-# Cài đặt thư viện
-npm install
-# Khởi chạy server giao diện
-npm run dev
-```
+- **Tài khoản PM (Quản lý dự án):** 
+  - Tên đăng nhập: `camtu`
+  - Mật khẩu: `123`
+- **Tài khoản Member (Thành viên):** 
+  - Tên đăng nhập: `ducmanh`
+  - Mật khẩu: `123`
 
-Truy cập `http://localhost:5173` để trải nghiệm giao diện và `http://localhost:8000/docs` để xem tài liệu Swagger API.
-
-### Tài khoản Demo (đã được seed)
-- **Admin**: `admin` / `123`
-- **PM**: `manager` / `123`
-- **Member 1 (Frontend)**: `manh` / `123`
-- **Member 2 (Backend)**: `tu` / `123`
+## 🛠️ Công nghệ sử dụng
+- **Frontend:** React + Vite
+- **Backend:** FastAPI (Python)
+- **Cơ sở dữ liệu:** SQLite (Mặc định cho môi trường local để dễ chấm)
+- **AI Tích hợp:** Google Gemini Flash
