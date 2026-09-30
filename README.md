@@ -1,7 +1,7 @@
-# 🚀 TaskMaster AI - Hệ thống quản lý dự án nhóm có tích hợp AI
+# TaskMaster AI - Hệ thống quản lý dự án nhóm có tích hợp AI
 **Nhóm 4 (ICTU)**
 
-## 📥 Hướng dẫn khởi chạy nhanh (Dành cho Giảng viên)
+## Hướng dẫn khởi chạy nhanh 
 
 Dự án đã được cấu hình script tự động hóa hoàn toàn để thuận tiện nhất cho việc chấm bài. Thầy/Cô không cần phải gõ bất kỳ lệnh cài đặt thủ công nào.
 
@@ -16,7 +16,7 @@ Dự án đã được cấu hình script tự động hóa hoàn toàn để th
 
 *(Lưu ý: Quá trình khởi chạy lần đầu tiên cần tải thư viện nên có thể mất khoảng 1-2 phút).*
 
-## 🔐 Tài khoản Demo (Đã nạp sẵn dữ liệu test)
+## Tài khoản Demo (Đã nạp sẵn dữ liệu test)
 
 - **Tài khoản PM (Quản lý dự án):** 
   - Tên đăng nhập: `camtu`
@@ -25,7 +25,7 @@ Dự án đã được cấu hình script tự động hóa hoàn toàn để th
   - Tên đăng nhập: `ducmanh`
   - Mật khẩu: `123`
 
-## 🛠️ Công nghệ sử dụng
+## Công nghệ sử dụng
 - **Frontend:** React + Vite
 - **Backend:** FastAPI (Python)
 - **Cơ sở dữ liệu:** SQLite (Mặc định cho môi trường local để dễ chấm)
